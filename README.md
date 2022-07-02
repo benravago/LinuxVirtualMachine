@@ -1,5 +1,5 @@
 # LinuxVirtualMachine
-A basic linux KVM guest for MacOS (and others)
+_A basic linux KVM guest for MacOS (and others)_
 
 The project contains some linux kernel config files to complement Apple's [Running Linux in a Virtual Machine](https://developer.apple.com/documentation/virtualization/running_linux_in_a_virtual_machine).
 
@@ -42,8 +42,9 @@ Hello world
 
 After the 'Hello world' message, do Ctrl-C to exit the LVM app.
 
+------
 
-##TODO:
+### TODO:
 
 1. add an example showing how to use the [toybox-aarch64](http://landley.net/toybox/bin/toybox-aarch64) bundle for a user environment
 2. [LinuxFromScratch](https://linuxfromscratch.org/) in the kvm (possibly bootstrapped from the [PiLFS](https://intestinate.com/pilfs/) aarch64 image
