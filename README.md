@@ -2,12 +2,15 @@
 A basic linux KVM guest for MacOS (and others)
 
 The project contains some linux kernel config files to complement Apple's [Running Linux in a Virtual Machine](https://developer.apple.com/documentation/virtualization/running_linux_in_a_virtual_machine).
+
 The base config is mostly from Adam Chester's [Bring Your Own VM - Mac Edition](https://blog.xpnsec.com/bring-your-own-vm-mac-edition/) blog post with a variation
 to add container/namespace support (for lxc) and another to add VFAT support.
 
-To build the LinuxVirtualMachine example app, you need to install Xcode.  To build the kernel, you'll need a host linux environment.
-I used [UTM](https://mac.getutm.app/) app with an [Ubuntu](https://mac.getutm.app/gallery/ubuntu-20-04) vm.
-For a kernel build, you will need to install a gcc toolchain via, for example,
+To build the LinuxVirtualMachine example app, you need to install Xcode.
+
+To build the kernel, you'll need a host linux environment.
+I used the [UTM](https://mac.getutm.app/) app with an [Ubuntu](https://mac.getutm.app/gallery/ubuntu-20-04) vm.
+For a kernel build, you will also need to install a gcc toolchain via, for example,
 
 `sudo apt-get install gcc make flex bison bc libncurses-dev`
 
