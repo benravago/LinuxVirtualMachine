@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cat << EOF > hello.c
+#include <stdio.h>
+#include <unistd.h>
+int main(int argc, char *argv[]) {
+  printf("Hello world\n");
+  sleep(999999999);
+}
+EOF
+
+gcc -static hello.c -o init
+echo 'init' | cpio -o -H newc > initramfs
